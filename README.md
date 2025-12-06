@@ -157,7 +157,7 @@ Vite accelerates development with hot reload and fast builds.
 
 ---
 
-## 🚀 Recommendations & Future Work
+##  Recommendations & Future Work
 - Add OTP challenge for high-risk logins  
 - Add an admin dashboard with analytics  
 - Improve ML-based anomaly detection  
@@ -167,7 +167,7 @@ Vite accelerates development with hot reload and fast builds.
 
 ---
 
-## ▶️ How to Run This Project
+##  How to Run This Project
 
 ### 1. Clone the repository
 ```bash
@@ -206,7 +206,9 @@ npm run dev
 
 ```
 Author & Contact
+
 Created by Harshit
+
 GitHub: https://github.com/harshitsr04
 
 ⭐ If you like this project, consider giving it a star on GitHub!
