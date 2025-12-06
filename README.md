@@ -1,4 +1,4 @@
-# 👻 GhostLogin Detector React  
+# 👻 GhostLogin Detector 
 A React + Vite + Tailwind CSS project integrated with an Express server middleware during development. The app is a single-page application (SPA) deployed on Vercel with client-side routing configured properly for zero 404 errors.
 
 ---
