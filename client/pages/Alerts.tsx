@@ -6,7 +6,7 @@ import {
   Info,
   X,
   Mail,
-  MessageSquare,
+  MessageCircle,
 } from "lucide-react";
 import { useState } from "react";
 import Layout from "@/components/Layout";
@@ -163,7 +163,7 @@ const Alerts = () => {
           <div className="bg-card border border-border rounded-lg p-6">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-warning/20 rounded-lg flex items-center justify-center">
-                <MessageSquare size={20} className="text-warning" />
+                <MessageCircle size={20} className="text-warning" />
               </div>
               <div>
                 <h3 className="font-semibold text-foreground">SMS Alerts</h3>
