@@ -100,12 +100,12 @@ ghostlogin-detector/
 
 ---
 ## 🚀 What Makes It Stand Out 
--Proactive Security: Unlike traditional systems that only detect after breaches, GhostLogin Detector identifies threats before damage occurs.
--AI-Powered Detection: Uses machine learning to spot unusual login patterns, not just basic IP checks
--Cross-Platform Monitoring: Works for web and mobile apps seamlessly.
--Real-Time Alerts: Users get instant notifications about suspicious access, increasing accountability.
--Easy Integration: Can be added to any app using Auth0 and standard APIs, making it highly versatile.
--Unique Threat Visualization: Provides an interactive dashboard showing suspicious login locations, devices, and risk scores, giving users and admins clear insights at a glance.
+- Proactive Security: Unlike traditional systems that only detect after breaches, GhostLogin Detector identifies threats before damage occurs.
+- AI-Powered Detection: Uses machine learning to spot unusual login patterns, not just basic IP checks
+- Cross-Platform Monitoring: Works for web and mobile apps seamlessly.
+- Real-Time Alerts: Users get instant notifications about suspicious access, increasing accountability.
+- Easy Integration: Can be added to any app using Auth0 and standard APIs, making it highly versatile.
+- Unique Threat Visualization: Provides an interactive dashboard showing suspicious login locations, devices, and risk scores, giving users and admins clear insights at a glance.
 
 
 ---
