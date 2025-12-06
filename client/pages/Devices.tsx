@@ -4,7 +4,8 @@ import { useToast } from "@/components/ui/use-toast";
 import Layout from "@/components/Layout";
 
 const Devices = () => {
-  const devices = [
+  const { toast } = useToast();
+  const [devices, setDevices] = useState([
     {
       id: 1,
       name: "MacBook Pro",
@@ -49,7 +50,28 @@ const Devices = () => {
       status: "suspicious",
       icon: "💻",
     },
-  ];
+  ]);
+
+  const handleTrustDevice = (deviceId: number, deviceName: string) => {
+    setDevices(
+      devices.map((device) =>
+        device.id === deviceId ? { ...device, status: "trusted" } : device
+      )
+    );
+    toast({
+      title: "✓ Device Trusted",
+      description: `${deviceName} has been marked as trusted.`,
+    });
+  };
+
+  const handleBlockDevice = (deviceId: number, deviceName: string) => {
+    setDevices(devices.filter((device) => device.id !== deviceId));
+    toast({
+      title: "⨯ Device Blocked",
+      description: `${deviceName} has been blocked.`,
+      variant: "destructive",
+    });
+  };
 
   const trustedCount = devices.filter((d) => d.status === "trusted").length;
   const newCount = 1;
