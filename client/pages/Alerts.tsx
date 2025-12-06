@@ -1,4 +1,13 @@
-import { Bell, AlertTriangle, AlertCircle, CheckCircle, Info, X } from "lucide-react";
+import {
+  Bell,
+  AlertTriangle,
+  AlertCircle,
+  CheckCircle,
+  Info,
+  X,
+  Mail,
+  MessageSquare,
+} from "lucide-react";
 import { useState } from "react";
 import Layout from "@/components/Layout";
 
@@ -288,41 +297,5 @@ const Alerts = () => {
     </Layout>
   );
 };
-
-// Icon component placeholders
-const Mail = ({ size, className }: { size: number; className: string }) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth={2}
-    className={className}
-  >
-    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-    <path d="m22 7-10 5L2 7"></path>
-  </svg>
-);
-
-const MessageSquare = ({
-  size,
-  className,
-}: {
-  size: number;
-  className: string;
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth={2}
-    className={className}
-  >
-    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-  </svg>
-);
 
 export default Alerts;
