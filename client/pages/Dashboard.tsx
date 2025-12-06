@@ -1,7 +1,17 @@
 import { AlertTriangle, ArrowUpRight, ArrowDownRight, Eye } from "lucide-react";
+import { useToast } from "@/components/ui/use-toast";
 import Layout from "@/components/Layout";
 
 const Dashboard = () => {
+  const { toast } = useToast();
+
+  const handleViewDetails = () => {
+    toast({
+      title: "Opening Details",
+      description: "Loading security alert details...",
+    });
+  };
+
   return (
     <Layout>
       <div className="space-y-6">
@@ -16,7 +26,10 @@ const Dashboard = () => {
               Unauthorized login attempt detected from Moscow, Russia. Session
               has been automatically blocked.
             </p>
-            <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+            <button
+              onClick={handleViewDetails}
+              className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
+            >
               View Details
             </button>
           </div>
