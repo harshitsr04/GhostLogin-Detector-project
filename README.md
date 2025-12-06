@@ -16,7 +16,7 @@ A security-focused web system that detects **unauthorized, hidden, or suspicious
 - [Strengths & Limitations](#strengths--limitations)
 - [Recommendations & Future Work](#recommendations--future-work)
 - [How to Run This Project](#how-to-run-this-project)
-- [Author & Contact](#author-&-contact)
+- [Author & Contact](#author--contact)
 
 ---
 
@@ -205,7 +205,7 @@ npm run dev
 ---
 
 ```
-Author & Contact
+## Author & Contact
 
 Created by Harshit
 
