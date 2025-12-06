@@ -18,17 +18,17 @@ A React + Vite + Tailwind CSS project integrated with an Express server middlewa
 
 ---
 
-### 🌟 Overview  
+###  Overview  
 GhostLogin Detector React is a frontend application built with React and Vite for blazing fast performance, styled with Tailwind CSS. During development, an Express server runs as middleware integrated with Vite. The app is deployed as an SPA on Vercel with correct routing fallback to avoid 404 errors.
 
 ---
 
-### 💡 Problem Statement  
+###  Problem Statement  
 Deploying React SPAs often leads to 404 errors on client-side routes when hosted on platforms like Vercel. This project solves this by configuring build output directories and route rewrites so the app works seamlessly online.
 
 ---
 
-### 🛠 Tools & Technologies  
+###  Tools & Technologies  
 - **Frontend:** React, Vite, React SWC plugin  
 - **Styling:** Tailwind CSS  
 - **Backend (Dev only):** Express server middleware  
@@ -37,7 +37,7 @@ Deploying React SPAs often leads to 404 errors on client-side routes when hosted
 
 ---
 
-### 📂 Project Structure  
+###  Project Structure  
 ghostlogin-detector-react/
 │
 ├── client/ # React frontend source code
@@ -52,7 +52,7 @@ ghostlogin-detector-react/
 
 ---
 
-### 🌟 Core Features  
+###  Core Features  
 - Blazing fast React frontend powered by Vite  
 - Tailwind CSS for responsive, utility-first styling  
 - Express server middleware integration during local development  
@@ -61,7 +61,7 @@ ghostlogin-detector-react/
 
 ---
 
-### 🔍 Logic & Workflow  
+###  Logic & Workflow  
 - During development, Vite runs with Express middleware to serve APIs or backend logic if needed  
 - `npm run build` creates optimized static files in `dist/spa`  
 - `vercel.json` rewrite rules ensure all client-side routes serve `index.html` to prevent 404s  
@@ -69,18 +69,18 @@ ghostlogin-detector-react/
 
 ---
 
-### 🖥 User Interface & Design  
+###  User Interface & Design  
 The UI leverages React components styled with Tailwind CSS, supporting dynamic navigation, dashboards, and responsive design suitable for all device sizes.
 
 ---
 
-### ⚖️ Strengths & Limitations  
+###  Strengths & Limitations  
 - **Strengths:** Fast build times, seamless SPA routing, easy Vercel deployment, integrated dev backend support  
 - **Limitations:** Express server middleware only works during development, backend not included in production deployment  
 
 ---
 
-### 🚀 Recommendations & Future Work  
+###  Recommendations & Future Work  
 - Separate full backend deployment for APIs (e.g., Render or Railway)  
 - Add authentication and user management features  
 - Improve accessibility and add dark mode support  
@@ -88,7 +88,7 @@ The UI leverages React components styled with Tailwind CSS, supporting dynamic n
 
 ---
 
-### ▶️ How to Run This Project  
+###  How to Run This Project  
 
 Clone the repo:  
 ```bash
@@ -97,6 +97,7 @@ cd ghostlogin-detector-react
 npm install
 npm run dev
 npm run build
+
 
 Deploy to Vercel with:
 
@@ -111,6 +112,7 @@ vercel.json in root with rewrite rule:
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
+```
 
 👨‍💻 Author & Contact ⭐ 
 
