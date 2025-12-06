@@ -1,4 +1,6 @@
 import { Plus, CheckCircle, AlertCircle, XCircle, Trash2 } from "lucide-react";
+import { useState } from "react";
+import { useToast } from "@/components/ui/use-toast";
 import Layout from "@/components/Layout";
 
 const Devices = () => {
@@ -203,19 +205,31 @@ const Devices = () => {
                 </button>
                 {device.status === "suspicious" ? (
                   <>
-                    <button className="flex-1 bg-success hover:bg-success/90 text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                    <button
+                      onClick={() => handleTrustDevice(device.id, device.name)}
+                      className="flex-1 bg-success hover:bg-success/90 text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                    >
                       Trust Device
                     </button>
-                    <button className="bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                    <button
+                      onClick={() => handleBlockDevice(device.id, device.name)}
+                      className="bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                    >
                       <Trash2 size={16} />
                     </button>
                   </>
                 ) : (
                   <>
-                    <button className="flex-1 bg-success hover:bg-success/90 text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                    <button
+                      onClick={() => handleTrustDevice(device.id, device.name)}
+                      className="flex-1 bg-success hover:bg-success/90 text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                    >
                       Trust Device
                     </button>
-                    <button className="flex-1 bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                    <button
+                      onClick={() => handleBlockDevice(device.id, device.name)}
+                      className="flex-1 bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                    >
                       Block Device
                     </button>
                   </>
