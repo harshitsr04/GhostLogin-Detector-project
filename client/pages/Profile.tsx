@@ -120,7 +120,9 @@ const Profile = () => {
 
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-foreground font-medium">Score Level</span>
+                  <span className="text-foreground font-medium">
+                    Score Level
+                  </span>
                   <span className="bg-success text-white px-3 py-1 rounded-full text-xs font-semibold">
                     Excellent
                   </span>
@@ -133,7 +135,9 @@ const Profile = () => {
                   <span className="text-foreground font-medium">
                     Next Milestone
                   </span>
-                  <span className="text-foreground font-semibold">95 points</span>
+                  <span className="text-foreground font-semibold">
+                    95 points
+                  </span>
                 </div>
               </div>
             </div>
@@ -168,7 +172,10 @@ const Profile = () => {
                         </p>
                       </div>
                     </div>
-                    <CheckCircle size={20} className="text-success flex-shrink-0" />
+                    <CheckCircle
+                      size={20}
+                      className="text-success flex-shrink-0"
+                    />
                   </div>
 
                   {/* Progress Bar */}

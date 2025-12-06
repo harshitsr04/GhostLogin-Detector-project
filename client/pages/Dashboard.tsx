@@ -17,7 +17,10 @@ const Dashboard = () => {
       <div className="space-y-6">
         {/* Critical Security Alert */}
         <div className="bg-red-950/50 border border-red-900 rounded-lg p-6 flex gap-4">
-          <AlertTriangle className="text-red-400 flex-shrink-0 mt-1" size={24} />
+          <AlertTriangle
+            className="text-red-400 flex-shrink-0 mt-1"
+            size={24}
+          />
           <div className="flex-1">
             <h3 className="text-red-300 font-semibold mb-1">
               Critical Security Alert
@@ -160,9 +163,7 @@ const Dashboard = () => {
               </svg>
               <div className="flex flex-col items-center justify-center">
                 <p className="text-5xl font-bold text-accent1">39</p>
-                <p className="text-muted-foreground text-xs mt-1">
-                  Risk Score
-                </p>
+                <p className="text-muted-foreground text-xs mt-1">Risk Score</p>
               </div>
             </div>
             <p className="text-xs text-muted-foreground text-center mt-6">

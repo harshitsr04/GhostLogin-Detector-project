@@ -55,8 +55,8 @@ const Devices = () => {
   const handleTrustDevice = (deviceId: number, deviceName: string) => {
     setDevices(
       devices.map((device) =>
-        device.id === deviceId ? { ...device, status: "trusted" } : device
-      )
+        device.id === deviceId ? { ...device, status: "trusted" } : device,
+      ),
     );
     toast({
       title: "✓ Device Trusted",
@@ -75,8 +75,9 @@ const Devices = () => {
 
   const trustedCount = devices.filter((d) => d.status === "trusted").length;
   const newCount = 1;
-  const suspiciousCount = devices.filter((d) => d.status === "suspicious")
-    .length;
+  const suspiciousCount = devices.filter(
+    (d) => d.status === "suspicious",
+  ).length;
 
   const getStatusIcon = (status: string) => {
     switch (status) {
@@ -193,8 +194,12 @@ const Devices = () => {
               {/* Details */}
               <div className="space-y-2 mb-6 pb-6 border-b border-border">
                 <div className="flex justify-between">
-                  <span className="text-xs text-muted-foreground">Browser:</span>
-                  <span className="text-sm text-foreground">{device.browser}</span>
+                  <span className="text-xs text-muted-foreground">
+                    Browser:
+                  </span>
+                  <span className="text-sm text-foreground">
+                    {device.browser}
+                  </span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-xs text-muted-foreground">
@@ -205,7 +210,9 @@ const Devices = () => {
                   </span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-xs text-muted-foreground">Location:</span>
+                  <span className="text-xs text-muted-foreground">
+                    Location:
+                  </span>
                   <span className="text-sm text-foreground">
                     {device.location}
                   </span>

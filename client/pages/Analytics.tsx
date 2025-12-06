@@ -115,8 +115,7 @@ const Analytics = () => {
             <div className="space-y-2">
               <p className="text-4xl font-bold text-foreground">12</p>
               <p className="text-xs text-red-400 flex items-center gap-1">
-                <ArrowUpRight size={12} />
-                5 countries
+                <ArrowUpRight size={12} />5 countries
               </p>
             </div>
           </div>
@@ -131,7 +130,10 @@ const Analytics = () => {
             </h3>
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={loginActivityData}>
-                <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+                <CartesianGrid
+                  strokeDasharray="3 3"
+                  stroke="hsl(var(--border))"
+                />
                 <XAxis dataKey="date" stroke="hsl(var(--muted-foreground))" />
                 <YAxis stroke="hsl(var(--muted-foreground))" />
                 <Tooltip
@@ -143,7 +145,11 @@ const Analytics = () => {
                   cursor={{ fill: "rgba(139, 92, 246, 0.1)" }}
                 />
                 <Legend />
-                <Bar dataKey="successful" fill="#8b5cf6" radius={[8, 8, 0, 0]} />
+                <Bar
+                  dataKey="successful"
+                  fill="#8b5cf6"
+                  radius={[8, 8, 0, 0]}
+                />
                 <Bar dataKey="total" fill="#f59e0b" radius={[8, 8, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
@@ -158,7 +164,10 @@ const Analytics = () => {
             </div>
             <ResponsiveContainer width="100%" height={300}>
               <LineChart data={riskScoreData}>
-                <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+                <CartesianGrid
+                  strokeDasharray="3 3"
+                  stroke="hsl(var(--border))"
+                />
                 <XAxis dataKey="time" stroke="hsl(var(--muted-foreground))" />
                 <YAxis stroke="hsl(var(--muted-foreground))" />
                 <Tooltip
@@ -196,9 +205,7 @@ const Analytics = () => {
                   cx="50%"
                   cy="50%"
                   labelLine={false}
-                  label={({ name, value }) =>
-                    `${name}: ${value}%`
-                  }
+                  label={({ name, value }) => `${name}: ${value}%`}
                   outerRadius={80}
                   fill="#8884d8"
                   dataKey="value"
@@ -233,7 +240,9 @@ const Analytics = () => {
                 return (
                   <div key={idx}>
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm text-foreground">{item.country}</span>
+                      <span className="text-sm text-foreground">
+                        {item.country}
+                      </span>
                       <span className="text-sm font-semibold text-foreground">
                         {item.users}
                       </span>

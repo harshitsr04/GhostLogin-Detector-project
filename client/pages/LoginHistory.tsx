@@ -87,7 +87,10 @@ const LoginHistory = () => {
         {/* Header with Search and Controls */}
         <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
           <div className="flex-1 relative">
-            <Search className="absolute left-3 top-3 text-muted-foreground" size={20} />
+            <Search
+              className="absolute left-3 top-3 text-muted-foreground"
+              size={20}
+            />
             <input
               type="text"
               placeholder="Search by location, device, source, or IP..."
@@ -109,11 +112,17 @@ const LoginHistory = () => {
         {/* Summary Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="bg-card border border-border rounded-lg p-4">
-            <p className="text-muted-foreground text-sm font-medium">Total Logins</p>
-            <p className="text-3xl font-bold text-foreground mt-2">{loginData.length}</p>
+            <p className="text-muted-foreground text-sm font-medium">
+              Total Logins
+            </p>
+            <p className="text-3xl font-bold text-foreground mt-2">
+              {loginData.length}
+            </p>
           </div>
           <div className="bg-card border border-border rounded-lg p-4">
-            <p className="text-muted-foreground text-sm font-medium">Successful</p>
+            <p className="text-muted-foreground text-sm font-medium">
+              Successful
+            </p>
             <p className="text-3xl font-bold text-success mt-2">
               {loginData.filter((d) => d.status === "Success").length}
             </p>
@@ -125,7 +134,9 @@ const LoginHistory = () => {
             </p>
           </div>
           <div className="bg-card border border-border rounded-lg p-4">
-            <p className="text-muted-foreground text-sm font-medium">Suspicious</p>
+            <p className="text-muted-foreground text-sm font-medium">
+              Suspicious
+            </p>
             <p className="text-3xl font-bold text-warning mt-2">
               {loginData.filter((d) => d.status === "Suspicious").length}
             </p>
@@ -167,13 +178,18 @@ const LoginHistory = () => {
                 </thead>
                 <tbody>
                   {loginData.map((row) => (
-                    <tr key={row.id} className="border-b border-border hover:bg-background/30 transition-colors">
+                    <tr
+                      key={row.id}
+                      className="border-b border-border hover:bg-background/30 transition-colors"
+                    >
                       <td className="px-6 py-4 text-sm text-foreground whitespace-pre-line">
                         {row.timestamp}
                       </td>
                       <td className="px-6 py-4 text-sm text-foreground flex items-center gap-2">
                         <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                        <span className="whitespace-pre-line">{row.location}</span>
+                        <span className="whitespace-pre-line">
+                          {row.location}
+                        </span>
                       </td>
                       <td className="px-6 py-4 text-sm text-foreground whitespace-pre-line">
                         {row.device}
@@ -190,7 +206,9 @@ const LoginHistory = () => {
                         {row.ip}
                       </td>
                       <td className="px-6 py-4 text-sm">
-                        <span className={`${row.statusColor} px-3 py-1 rounded-full text-white text-xs font-medium`}>
+                        <span
+                          className={`${row.statusColor} px-3 py-1 rounded-full text-white text-xs font-medium`}
+                        >
                           {row.status}
                         </span>
                       </td>

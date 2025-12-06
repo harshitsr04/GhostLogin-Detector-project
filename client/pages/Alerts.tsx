@@ -102,8 +102,8 @@ const Alerts = () => {
   const handleMarkAsRead = (alertId: number, alertTitle: string) => {
     setAlerts(
       alerts.map((alert) =>
-        alert.id === alertId ? { ...alert, read: true } : alert
-      )
+        alert.id === alertId ? { ...alert, read: true } : alert,
+      ),
     );
     toast({
       title: "Marked as Read",
@@ -142,7 +142,9 @@ const Alerts = () => {
     } else if (type === "push") {
       setPushEnabled(!pushEnabled);
       toast({
-        title: pushEnabled ? "Push Notifications Disabled" : "Push Notifications Enabled",
+        title: pushEnabled
+          ? "Push Notifications Disabled"
+          : "Push Notifications Enabled",
         description: `Push notifications have been ${pushEnabled ? "disabled" : "enabled"}.`,
       });
     }
@@ -304,7 +306,7 @@ const Alerts = () => {
               >
                 {f}
               </button>
-            )
+            ),
           )}
         </div>
 
