@@ -20,12 +20,12 @@ A security-focused web system that detects **unauthorized, hidden, or suspicious
 
 ---
 
-## 🧩 Overview
+##  Overview
 GhostLogin Detector is a web-based security system designed to track, analyze, and flag suspicious login behavior. It identifies abnormal patterns like unknown devices, IP mismatches, unusual timings, or bypassed interfaces—helping users and admins prevent account misuse or silent intrusions.
 
 ---
 
-## 💡 Problem Statement
+##  Problem Statement
 Traditional login systems only validate credentials. They **do not detect**:
 - Logins from unknown devices  
 - Hidden/ghost login attempts  
@@ -36,7 +36,7 @@ This project solves that gap by adding an **intelligent detection layer** that m
 
 ---
 
-## 📊 Dataset & Inputs
+##  Dataset & Inputs
 No external dataset is required.  
 Inputs are collected dynamically at login time:
 - Email / Username  
@@ -51,7 +51,7 @@ Logs are internally stored for analysis and review.
 
 ---
 
-## 🛠 Tools & Technologies
+##  Tools & Technologies
 **Frontend:** React / Vite  
 **Backend:** Node.js + Express  
 **Database:** MongoDB  
@@ -62,7 +62,7 @@ Logs are internally stored for analysis and review.
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 ghostlogin-detector/
 │
 ├── server/
@@ -89,7 +89,7 @@ ghostlogin-detector/
 
 ---
 
-## 🌟 Core Features
+##  Core Features
 - 🔐 Real-time login monitoring  
 - 🔍 Detection of ghost/hidden login attempts  
 - 🌍 IP + Geo-location mismatch detection  
@@ -99,7 +99,7 @@ ghostlogin-detector/
 - ✉️ Optional email/SMS alerts for suspicious logins  
 
 ---
-## 🚀 What Makes It Stand Out 
+##  What Makes It Stand Out 
 - Proactive Security: Unlike traditional systems that only detect after breaches, GhostLogin Detector identifies threats before damage occurs.
 - AI-Powered Detection: Uses machine learning to spot unusual login patterns, not just basic IP checks
 - Cross-Platform Monitoring: Works for web and mobile apps seamlessly.
@@ -110,7 +110,7 @@ ghostlogin-detector/
 
 ---
 
-## 🔍 Logic & Workflow
+##  Logic & Workflow
 1. User enters login credentials.  
 2. System captures:
    - Device fingerprint  
@@ -131,7 +131,7 @@ ghostlogin-detector/
 
 ---
 
-## 🖥 User Interface & Design
+##  User Interface & Design
 A clean and intuitive interface built using React:  
 - Dashboard showing login history  
 - Real-time alerts  
@@ -143,7 +143,7 @@ Vite accelerates development with hot reload and fast builds.
 
 ---
 
-## ⚖️ Strengths & Limitations
+##  Strengths & Limitations
 ### ✔️ Strengths
 - Detects login anomalies in real time  
 - Helps prevent unauthorized access  
