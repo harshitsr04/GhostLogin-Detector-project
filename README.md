@@ -8,7 +8,8 @@ A React + Vite + Tailwind CSS project integrated with an Express server middlewa
 - [Problem Statement](#problem-statement)  
 - [Tools & Technologies](#tools--technologies)  
 - [Project Structure](#project-structure)  
-- [Core Features](#core-features)  
+- [Core Features](#core-features)
+- [What Makes It Stand Out](#What-Makes-It-Stand-Out)  
 - [Logic & Workflow](#logic--workflow)  
 - [User Interface & Design](#user-interface--design)  
 - [Strengths & Limitations](#strengths--limitations)  
@@ -24,16 +25,33 @@ GhostLogin Detector React is a frontend application built with React and Vite fo
 ---
 
 ###  Problem Statement  
-Deploying React SPAs often leads to 404 errors on client-side routes when hosted on platforms like Vercel. This project solves this by configuring build output directories and route rewrites so the app works seamlessly online.
+Despite advanced authentication methods, credential misuse remains one of the biggest causes of account breaches. Attackers can easily log in using stolen or shared credentials, and users are never informed until the damage is done. Most platforms lack real-time anomaly detection, device tracking, or behavioral analysis during login. The problem is the absence of an intelligent system that can verify if the login activity truly matches the real user’s identity and behavior. A solution is needed to detect unauthorized logins in real time and take immediate defensive action.
+<img width="13257" height="109" alt="image" src="https://github.com/user-attachments/assets/c68cd752-1b98-4435-a361-82af1c3732ac" />
+
 
 ---
 
 ###  Tools & Technologies  
-- **Frontend:** React, Vite, React SWC plugin  
-- **Styling:** Tailwind CSS  
-- **Backend (Dev only):** Express server middleware  
-- **Deployment:** Vercel  
-- **Version Control:** Git & GitHub  
+1. Frontend :-
+	React  – Modern, responsive dashboard for users and admins
+	Chart.js – Visualize suspicious login events and risk scores
+	Tailwind CSS – Clean UI styling
+2. Backend :-
+	Spring Boot (Java) – Core server logic and REST API endpoints
+	Auth0 – User authentication, login management, device fingerprinting
+	AWS Lambda – Real-time login risk scoring
+	AWS SNS – Instant alerts via email, SMS, or push notifications
+	REST APIs – Connect frontend and backend for login, alerts, and dashboard data
+3. Database :-
+	MongoDB Atlas – Stores user sessions, login history, device fingerprints, risk scores
+	Collections: users, sessions, device, fingerprints, risk events
+4. Cloud :-
+	AWS – Lambda, SNS, S3 (storage of logs and audit data)
+	Deployment: AWS Amplify 
+5. Reporting & Monitoring :-
+	MLH Base – Generate real-time security reports and visualizations
+	Dashboard – View alerts, login history, and risk analytics
+<img width="1365" height="1096" alt="image" src="https://github.com/user-attachments/assets/d8cd5f91-426a-4b20-b0dc-60e28d7a89a3" />
 
 ---
 
@@ -51,13 +69,28 @@ ghostlogin-detector-react/
 
 
 ---
+### Core Features
 
-###  Core Features  
-- Blazing fast React frontend powered by Vite  
-- Tailwind CSS for responsive, utility-first styling  
-- Express server middleware integration during local development  
-- Clean client-side routing with React Router  
-- SPA rewrite configuration for flawless Vercel deployment  
+Detect unauthorized logins in real time.
+Generate risk scores for each login attempt.
+Block or challenge suspicious sessions automatically.
+Provide user-friendly dashboard with alerts and login history.
+Improve account security and protect sensitive data.
+
+---
+
+### What Makes It Stand Out 
+
+Proactive Security: Unlike traditional systems that only detect after breaches, GhostLogin Detector identifies threats before damage occurs.
+AI-Powered Detection: Uses machine learning to spot unusual login patterns, not just basic IP checks
+Cross-Platform Monitoring: Works for web and mobile apps seamlessly.
+Real-Time Alerts: Users get instant notifications about suspicious access, increasing accountability.
+Easy Integration: Can be added to any app using Auth0 and standard APIs, making it highly versatile.
+Unique Threat Visualization: Provides an interactive dashboard showing suspicious login locations, devices, and risk scores, giving users and admins clear insights at a glance.
+<img width="2731" height="942" alt="image" src="https://github.com/user-attachments/assets/5ea42f34-2c4a-4d60-bf77-2306ba8645b3" />
+
+---
+
 
 ---
 
