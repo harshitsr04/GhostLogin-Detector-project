@@ -1,4 +1,6 @@
 import { Search, Download, ChevronDown } from "lucide-react";
+import { useState } from "react";
+import { useToast } from "@/components/ui/use-toast";
 import Layout from "@/components/Layout";
 
 const LoginHistory = () => {
@@ -164,13 +166,22 @@ const LoginHistory = () => {
                     </td>
                     <td className="px-6 py-4 text-sm space-y-2">
                       <div className="flex gap-2 flex-wrap">
-                        <button className="px-3 py-1 bg-green-600 hover:bg-green-700 text-white rounded text-xs font-medium transition-colors">
+                        <button
+                          onClick={() => handleAllow(row.id, row.location)}
+                          className="px-3 py-1 bg-green-600 hover:bg-green-700 text-white rounded text-xs font-medium transition-colors"
+                        >
                           ✓ Allow
                         </button>
-                        <button className="px-3 py-1 bg-accent1 hover:bg-accent1/90 text-white rounded text-xs font-medium transition-colors">
+                        <button
+                          onClick={() => handleAccept(row.id, row.location)}
+                          className="px-3 py-1 bg-accent1 hover:bg-accent1/90 text-white rounded text-xs font-medium transition-colors"
+                        >
                           ✓ Accept
                         </button>
-                        <button className="px-3 py-1 bg-red-600 hover:bg-red-700 text-white rounded text-xs font-medium transition-colors">
+                        <button
+                          onClick={() => handleBlock(row.id, row.location)}
+                          className="px-3 py-1 bg-red-600 hover:bg-red-700 text-white rounded text-xs font-medium transition-colors"
+                        >
                           ⨯ Block
                         </button>
                       </div>
