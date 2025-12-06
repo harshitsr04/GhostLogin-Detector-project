@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import {
   LayoutDashboard,
   History,
-  MonitorSquare,
+  Monitor,
   Bell,
   BarChart3,
   User,
@@ -18,7 +18,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   const navItems = [
     { label: "Dashboard", icon: LayoutDashboard, path: "/" },
     { label: "Login History", icon: History, path: "/login-history" },
-    { label: "Devices", icon: MonitorSquare, path: "/devices" },
+    { label: "Devices", icon: Monitor, path: "/devices" },
     { label: "Alerts", icon: Bell, path: "/alerts" },
     { label: "Analytics", icon: BarChart3, path: "/analytics" },
     { label: "Profile", icon: User, path: "/profile" },
