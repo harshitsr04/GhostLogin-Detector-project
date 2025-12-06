@@ -92,7 +92,7 @@ The UI leverages React components styled with Tailwind CSS, supporting dynamic n
 
 Clone the repo:  
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/harshitsr04/GhostLogin-Detector-project.git
 cd ghostlogin-detector-react
 npm install
 npm run dev
