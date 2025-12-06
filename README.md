@@ -205,7 +205,8 @@ npm run dev
 ---
 
 ```
-👨‍💻 Author & Contact
+👨‍💻
+Author & Contact
 Created by Harshit
 GitHub: https://github.com/harshitsr04
 
